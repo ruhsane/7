@@ -11,6 +11,8 @@
 		9DA635782177BC0D00F74865 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA635772177BC0D00F74865 /* CreateProfileViewController.swift */; };
 		9DCF99552179C13F00D8AB2E /* icons8-add_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCF99542179C13F00D8AB2E /* icons8-add_filled.png */; };
 		9DCF99572179C65300D8AB2E /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF99562179C65300D8AB2E /* GenderViewController.swift */; };
+		9DCF9959217A823700D8AB2E /* SexualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF9958217A823700D8AB2E /* SexualityViewController.swift */; };
+		9DCF995B217A844F00D8AB2E /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF995A217A844F00D8AB2E /* BrowseViewController.swift */; };
 		9DFEF245217546C20059B191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFEF244217546C20059B191 /* AppDelegate.swift */; };
 		9DFEF247217546C20059B191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFEF246217546C20059B191 /* ViewController.swift */; };
 		9DFEF24A217546C20059B191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFEF248217546C20059B191 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		9DA635772177BC0D00F74865 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		9DCF99542179C13F00D8AB2E /* icons8-add_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add_filled.png"; sourceTree = "<group>"; };
 		9DCF99562179C65300D8AB2E /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		9DCF9958217A823700D8AB2E /* SexualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexualityViewController.swift; sourceTree = "<group>"; };
+		9DCF995A217A844F00D8AB2E /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		9DFEF241217546C20059B191 /* Seven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFEF244217546C20059B191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DFEF246217546C20059B191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,7 +141,9 @@
 				9DFEF246217546C20059B191 /* ViewController.swift */,
 				9DA635772177BC0D00F74865 /* CreateProfileViewController.swift */,
 				9DFEF248217546C20059B191 /* Main.storyboard */,
+				9DCF995A217A844F00D8AB2E /* BrowseViewController.swift */,
 				9DCF99562179C65300D8AB2E /* GenderViewController.swift */,
+				9DCF9958217A823700D8AB2E /* SexualityViewController.swift */,
 				9DFEF24B217546C40059B191 /* Assets.xcassets */,
 				9DFEF24D217546C40059B191 /* LaunchScreen.storyboard */,
 				9DFEF250217546C40059B191 /* Info.plist */,
@@ -368,9 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCF995B217A844F00D8AB2E /* BrowseViewController.swift in Sources */,
 				9DA635782177BC0D00F74865 /* CreateProfileViewController.swift in Sources */,
 				9DCF99572179C65300D8AB2E /* GenderViewController.swift in Sources */,
 				9DFEF247217546C20059B191 /* ViewController.swift in Sources */,
+				9DCF9959217A823700D8AB2E /* SexualityViewController.swift in Sources */,
 				9DFEF245217546C20059B191 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
