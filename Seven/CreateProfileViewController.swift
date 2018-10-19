@@ -60,9 +60,8 @@ class CreateProfileViewController: UIViewController {
         guard let description = descriptionTextField.text else{return errorMessage()}
         guard let image = profileImage.image else{return errorMessage()}
         
-        //store the profile image to firebase storage
-//        self.uploadProfileImage(image, url)
         
+        //store the profile image to firebase storage
         self.uploadProfileImage(image) { url in
             
             if url != nil {
@@ -76,7 +75,9 @@ class CreateProfileViewController: UIViewController {
                         self.saveProfile(name:name, age:age, description:description, profileImageURL: url!) { success in
                             if success {
                                 self.dismiss(animated: true, completion: nil)
+                                self.performSegue(withIdentifier: "toGender", sender: self)
                             }
+                        
                         }
                         
                     } else {
@@ -93,7 +94,6 @@ class CreateProfileViewController: UIViewController {
     
     func saveProfile(name:String, age:String, description:String, profileImageURL: URL, completion: @escaping ((_ success:Bool)->())){
         //store the name, age and description to databse
-
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let databaseRef = Database.database().reference().child("Users").child(uid)
         

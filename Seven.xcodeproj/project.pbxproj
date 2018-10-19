@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		314A81A4E08094CD046A9D14 /* Pods_Seven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D2A1904D916D38C1973CC /* Pods_Seven.framework */; };
-		9D7FD1E021793C9C00DF1C9A /* addPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7FD1DF21793C9C00DF1C9A /* addPicture.png */; };
 		9DA635782177BC0D00F74865 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA635772177BC0D00F74865 /* CreateProfileViewController.swift */; };
+		9DCF99552179C13F00D8AB2E /* icons8-add_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCF99542179C13F00D8AB2E /* icons8-add_filled.png */; };
+		9DCF99572179C65300D8AB2E /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF99562179C65300D8AB2E /* GenderViewController.swift */; };
 		9DFEF245217546C20059B191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFEF244217546C20059B191 /* AppDelegate.swift */; };
 		9DFEF247217546C20059B191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFEF246217546C20059B191 /* ViewController.swift */; };
 		9DFEF24A217546C20059B191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFEF248217546C20059B191 /* Main.storyboard */; };
@@ -41,8 +42,9 @@
 		16F03EAB388F2F0FC2963A69 /* Pods-Seven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seven.release.xcconfig"; path = "Pods/Target Support Files/Pods-Seven/Pods-Seven.release.xcconfig"; sourceTree = "<group>"; };
 		5B7D2A1904D916D38C1973CC /* Pods_Seven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE81A69543D761361A86B73 /* Pods_SevenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SevenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D7FD1DF21793C9C00DF1C9A /* addPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addPicture.png; sourceTree = "<group>"; };
 		9DA635772177BC0D00F74865 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		9DCF99542179C13F00D8AB2E /* icons8-add_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add_filled.png"; sourceTree = "<group>"; };
+		9DCF99562179C65300D8AB2E /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
 		9DFEF241217546C20059B191 /* Seven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFEF244217546C20059B191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DFEF246217546C20059B191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,11 +137,12 @@
 				9DFEF246217546C20059B191 /* ViewController.swift */,
 				9DA635772177BC0D00F74865 /* CreateProfileViewController.swift */,
 				9DFEF248217546C20059B191 /* Main.storyboard */,
+				9DCF99562179C65300D8AB2E /* GenderViewController.swift */,
 				9DFEF24B217546C40059B191 /* Assets.xcassets */,
 				9DFEF24D217546C40059B191 /* LaunchScreen.storyboard */,
 				9DFEF250217546C40059B191 /* Info.plist */,
 				9DFEF27421766E980059B191 /* GoogleService-Info.plist */,
-				9D7FD1DF21793C9C00DF1C9A /* addPicture.png */,
+				9DCF99542179C13F00D8AB2E /* icons8-add_filled.png */,
 			);
 			path = Seven;
 			sourceTree = "<group>";
@@ -271,7 +274,7 @@
 			files = (
 				9DFEF24F217546C40059B191 /* LaunchScreen.storyboard in Resources */,
 				9DFEF27521766E980059B191 /* GoogleService-Info.plist in Resources */,
-				9D7FD1E021793C9C00DF1C9A /* addPicture.png in Resources */,
+				9DCF99552179C13F00D8AB2E /* icons8-add_filled.png in Resources */,
 				9DFEF24C217546C40059B191 /* Assets.xcassets in Resources */,
 				9DFEF24A217546C20059B191 /* Main.storyboard in Resources */,
 			);
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA635782177BC0D00F74865 /* CreateProfileViewController.swift in Sources */,
+				9DCF99572179C65300D8AB2E /* GenderViewController.swift in Sources */,
 				9DFEF247217546C20059B191 /* ViewController.swift in Sources */,
 				9DFEF245217546C20059B191 /* AppDelegate.swift in Sources */,
 			);
