@@ -9,6 +9,8 @@ target 'Seven' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
 
 #  target 'SevenTests' do
 #    inherit! :search_paths

@@ -26,7 +26,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         
         // automatically sign in the user.
-        GIDSignIn.sharedInstance().signInSilently()
+//        GIDSignIn.sharedInstance().signInSilently()
         
         // TODO(developer) Configure the sign-in button look/feel
         // ...
@@ -38,7 +38,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         // ...
         if let error = error {
             print("Failed to login to Google")
-            
+
             return
         }
         
@@ -56,13 +56,20 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
             }
             // User is signed in
             // ...
+            let user = Auth.auth().currentUser
             print("user successfully signed in through GOOGLE! uid:\(Auth.auth().currentUser!.uid)")
             print("signed in")
+            
+            let userRef = Database.database().reference().child("Users").child((user?.uid)!)
+            let userAtt = ["email": user?.email]
+            print("hahha" + (user?.email)!)
+            userRef.setValue(userAtt)
             self.performSegue(withIdentifier: "createProfile", sender: nil)
+            
         }
         
+
     }
-    
     
     
 }

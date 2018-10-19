@@ -24,6 +24,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
 
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+            // ...
+            let user = Auth.auth().currentUser
+            print(user?.email)
+        } else {
+            // No user is signed in.
+            // ...
+            print("No user is signed in")
+            
+        }
+        
         return true
     }
     
