@@ -27,7 +27,7 @@ class CreateProfileViewController: UIViewController {
         super.viewDidLoad()
         
         doneButton.addTarget(self, action: #selector(handleProfileData), for: .touchUpInside)
-
+        
         //dismiss keyboard when tapped outside of the textfield
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
@@ -74,10 +74,12 @@ class CreateProfileViewController: UIViewController {
                         
                         self.saveProfile(name:name, age:age, description:description, profileImageURL: url!) { success in
                             if success {
-                                self.dismiss(animated: true, completion: nil)
+                               
                                 self.performSegue(withIdentifier: "toGender", sender: self)
+                            
+                                
                             }
-                        
+                            
                         }
                         
                     } else {
@@ -106,7 +108,7 @@ class CreateProfileViewController: UIViewController {
         
         databaseRef.updateChildValues(userObject) { error, ref in
             completion(error == nil)
-        
+            
         }
     }
     
@@ -120,7 +122,7 @@ class CreateProfileViewController: UIViewController {
         nameTextField.resignFirstResponder()
         ageTextField.resignFirstResponder()
         descriptionTextField.resignFirstResponder()
-
+        
     }
     
     func uploadProfileImage(_ image: UIImage, completion: @escaping ((_ url:URL?)->())) {

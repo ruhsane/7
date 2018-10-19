@@ -6,7 +6,9 @@
 //  Copyright © 2018 Ruhsane Sawut. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import Firebase
 
 class GenderViewController: UIViewController {
 
@@ -16,9 +18,34 @@ class GenderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if 
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedFemale(_:)))
+        tapGesture.numberOfTapsRequired = 1
+        femaleOption.addGestureRecognizer(tapGesture)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tappedMale(_:)))
+        tap.numberOfTapsRequired = 1
+        maleOption.addGestureRecognizer(tap)
+
     }
     
+    @objc func tappedFemale(_ sender: UIGestureRecognizer){
+        print("gender female")
+        let uid = Auth.auth().currentUser?.uid
+        let databaseRef = Database.database().reference().child("Users").child(uid!).child("Gender")
+        databaseRef.setValue("female")
+        self.performSegue(withIdentifier: "toSexuality", sender: self)
+
+    }
+    
+    @objc func tappedMale(_ sender: UIGestureRecognizer){
+        print("gender male")
+        let uid = Auth.auth().currentUser?.uid
+        let databaseRef = Database.database().reference().child("Users").child(uid!).child("Gender")
+        databaseRef.setValue("male")
+        self.performSegue(withIdentifier: "toSexuality", sender: self)
+
+    }
+
 
     /*
     // MARK: - Navigation
